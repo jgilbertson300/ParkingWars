@@ -1,7 +1,8 @@
 ﻿#pragma strict
-         
+ 
+var sounds : AudioClip[];
 function QuitGame() {				
-	Debug.Log("Quit doesn't work in editor.");
+	Debug.Log("can't quit from editor");
 	Application.Quit();
 }
 function SelectSportsCar(){
@@ -13,6 +14,7 @@ function SelectSportsCar(){
 	PlayerPrefs.SetFloat("Player1Speed", 8.0f);
 	PlayerPrefs.SetFloat("Player1Rotation", 100.0f);
 	PlayerPrefs.SetInt("Player1MaxHits", 3);
+	AudioSource.PlayClipAtPoint(sounds[0],transform.position);
 }
 
 function SelectSedan(){
@@ -24,6 +26,7 @@ function SelectSedan(){
 	PlayerPrefs.SetFloat("Player1Speed", 6.0f);
 	PlayerPrefs.SetFloat("Player1Rotation", 75.0f);
 	PlayerPrefs.SetInt("Player1MaxHits", 5);
+	AudioSource.PlayClipAtPoint(sounds[1],transform.position);
 }
 
 function SelectSUV(){
@@ -35,15 +38,19 @@ function SelectSUV(){
 	PlayerPrefs.SetFloat("Player1Speed", 4.0f);
 	PlayerPrefs.SetFloat("Player1Rotation", 50.0f);
 	PlayerPrefs.SetInt("Player1MaxHits", 7);
+	AudioSource.PlayClipAtPoint(sounds[2],transform.position);
 }
 
 function LoadStart1() {
 	Application.LoadLevel("Start_Screen");
 }
 function LoadStart2() {
+	StartCoroutine(Load2());
+}
+function Load2() {
+	yield WaitForSeconds(2);
 	Application.LoadLevel("Start_Screen2");
 }
-
 function MainMenu() {
 	Application.LoadLevel("Start_Screen");
 }

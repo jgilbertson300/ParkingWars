@@ -4,14 +4,15 @@ using System.Collections;
 public class Student_Collider : MonoBehaviour {
 					//this is called when the student spawns
 	public float speed;
-	
+	public AudioClip clip;
 	public static Transform target;
-	
+	GameObject audiosrc;
 	GameObject Right, Left;
 	void Start() {
-			Debug.Log ("Student is live!");
-			Right = GameObject.Find ("Student_Right");
-			Left = GameObject.Find ("Student_Left");
+		Debug.Log ("Student is live!");
+		Right = GameObject.Find ("Student_Right");
+		Left = GameObject.Find ("Student_Left");
+		audiosrc = GameObject.Find ("audiosource");
 	}
 
 	void OnTriggerEnter2D(Collider2D col) {
@@ -24,7 +25,7 @@ public class Student_Collider : MonoBehaviour {
 			target = Right.transform;
 		}
 		if(col.gameObject.name.Contains("Player")) {
-
+			AudioSource.PlayClipAtPoint(clip, audiosrc.transform.position);
 			On_Start.Timer_HazardActive = true;
 
 			if(col.gameObject.name.Contains("1")) {

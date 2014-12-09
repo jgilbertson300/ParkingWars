@@ -3,6 +3,8 @@ using System.Collections;
 
 public class AI_Movement : MonoBehaviour {
 	public static GameObject target;
+	public AudioClip clip;
+	GameObject audiosrc;
 	public float speed;
 	GameObject coyote, coyote2, spawn;
 	// Use this for initialization
@@ -14,25 +16,26 @@ public class AI_Movement : MonoBehaviour {
 		coyote2.name = "Coyote_Static";
 		coyote2.SetActive(false);
 		target = GameObject.Find ("Coyote_Spawn1");
+		audiosrc = GameObject.Find ("audiosource");
 	}
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.name.Contains ("Player")) {
 
-		On_Start.Timer_HazardActive = true;
-
-		if (col.gameObject.name.Contains ("1")) {
-			if (Inventory1.PlayerItems.Count != 0) {
-					Inventory1.PlayerItems.Pop ();
-					Debug.Log ("Player1 has lost an item!");
+			On_Start.Timer_HazardActive = true;
+			AudioSource.PlayClipAtPoint(clip, audiosrc.transform.position);
+			if (col.gameObject.name.Contains ("1")) {
+				if (Inventory1.PlayerItems.Count != 0) {
+						Inventory1.PlayerItems.Pop ();
+						Debug.Log ("Player1 has lost an item!");
+				}
 			}
-		}
-		if (col.gameObject.name.Contains ("2")) {
-			if (Inventory2.PlayerItems.Count != 0) {
-					Inventory2.PlayerItems.Pop ();
-					Debug.Log ("Player2 has lost an items!");
+			if (col.gameObject.name.Contains ("2")) {
+				if (Inventory2.PlayerItems.Count != 0) {
+						Inventory2.PlayerItems.Pop ();
+						Debug.Log ("Player2 has lost an items!");
+				}
 			}
-		}
-		Destroy (gameObject);
+			Destroy (gameObject);
 		}
 	}
 	// Update is called once per frame

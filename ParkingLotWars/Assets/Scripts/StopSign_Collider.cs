@@ -4,14 +4,17 @@ using System.Collections;
 public class StopSign_Collider : MonoBehaviour {
 	public float TimeAtStopSign;
 	public static GameObject target;
+	public AudioClip clip;
 	public bool timerActive = false;
-
+	GameObject audiosrc;
 	void Start(){
 		TimeAtStopSign = 3.0f;
+		audiosrc = GameObject.Find ("audiosource");
 	}
 
 	void OnTriggerStay2D(Collider2D col) {
 		if (col.gameObject.name == target.name) {
+			AudioSource.PlayClipAtPoint(clip, audiosrc.transform.position);
 			timerActive = true;
 			Car_Controller carcontroller = col.GetComponent ("Car_Controller") as Car_Controller;
 			carcontroller.speed = 0.0f;
