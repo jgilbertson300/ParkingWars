@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Coffee_Collider.cs" />
      <Compile Include="Assets\Scripts\Coffee_Fire.cs" />
      <Compile Include="Assets\Scripts\Coyote_Animator.cs" />
+     <Compile Include="Assets\Scripts\Fade.cs" />
      <Compile Include="Assets\Scripts\Goal.cs" />
      <Compile Include="Assets\Scripts\Hydrant_Spawn.cs" />
      <Compile Include="Assets\Scripts\Input_Controls\Car_Controller.cs" />

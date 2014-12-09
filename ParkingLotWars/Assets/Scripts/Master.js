@@ -1,5 +1,5 @@
 ﻿#pragma strict
-
+         
 function QuitGame() {				
 	Debug.Log("Quit doesn't work in editor.");
 	Application.Quit();
@@ -46,4 +46,10 @@ function LoadStart2() {
 
 function MainMenu() {
 	Application.LoadLevel("Start_Screen");
+}
+function Update() {
+		if(Input.GetKeyDown("escape")) {
+			Debug.Log ("can't quit from editor");
+				Application.Quit(); 
+		}
 }

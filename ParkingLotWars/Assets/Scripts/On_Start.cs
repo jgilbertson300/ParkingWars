@@ -122,7 +122,7 @@ public class On_Start : MonoBehaviour {
 	}
 	void Start () {
 		GameObject music;
-		music = GameObject.Find ("Main_Music");
+		music = GameObject.Find ("Music");
 		Destroy (music);
 		GameObject P1Source1, P1Source2, P2Source1, P2Source2;
 						//load all the prefabs into their proper GameObjects
@@ -185,6 +185,10 @@ public class On_Start : MonoBehaviour {
 		if (Count1 > Count2) {
 			Count2++;
 			Reset ();
+		}
+		if(Input.GetKeyDown("escape")) {
+			Debug.Log ("can't quit from editor");
+				Application.Quit(); 
 		}
 	} 
 }
