@@ -14,44 +14,56 @@ Platform assembly: C:\Users\Jay\Documents\ParkingLotWars\ParkingLotWars_Data\Man
 Loading C:\Users\Jay\Documents\ParkingLotWars\ParkingLotWars_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Jay\Documents\ParkingLotWars\ParkingLotWars_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Jay\Documents\ParkingLotWars\ParkingLotWars_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.030 seconds
-desktop: 1920x1200 59Hz; virtual: 3600x1200 at -1680,0
+- Completed reload, in  0.035 seconds
+desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Jay\Documents\ParkingLotWars\ParkingLotWars_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jay\Documents\ParkingLotWars\ParkingLotWars_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.170566 ms
+UnloadTime: 0.227614 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 169.
-Total: 0.327966 ms (FindLiveObjects: 0.004681 ms CreateObjectMapping: 0.004973 ms MarkObjects: 0.057635 ms  DeleteObjects: 0.005266 ms)
+Total: 0.489166 ms (FindLiveObjects: 0.006728 ms CreateObjectMapping: 0.006436 ms MarkObjects: 0.083673 ms  DeleteObjects: 0.007606 ms)
 
-UnloadTime: 6.016628 ms
+UnloadTime: 5.880828 ms
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 193.
-Total: 2.052353 ms (FindLiveObjects: 0.013458 ms CreateObjectMapping: 0.012872 ms MarkObjects: 0.202163 ms  DeleteObjects: 1.130184 ms)
+Total: 2.062575 ms (FindLiveObjects: 0.015213 ms CreateObjectMapping: 0.012580 ms MarkObjects: 0.196602 ms  DeleteObjects: 1.134563 ms)
 
-Sedan is selected for player1.
+SUV is selected for player1.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Platform assembly: C:\Users\Jay\Documents\ParkingLotWars\ParkingLotWars_Data\Managed\Boo.Lang.dll (this message is harmless)
-UnloadTime: 1.091857 ms
+UnloadTime: 1.105306 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 192.
-Total: 0.891742 ms (FindLiveObjects: 0.013458 ms CreateObjectMapping: 0.012580 ms MarkObjects: 0.197774 ms  DeleteObjects: 0.004681 ms)
+Total: 0.875351 ms (FindLiveObjects: 0.012872 ms CreateObjectMapping: 0.012580 ms MarkObjects: 0.187533 ms  DeleteObjects: 0.004388 ms)
 
-SUV is selected for player2.
+Sedan is selected for player2.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 0.617315 ms
+UnloadTime: 0.444404 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 511.
-Total: 0.754821 ms (FindLiveObjects: 0.015506 ms CreateObjectMapping: 0.007606 ms MarkObjects: 0.128729 ms  DeleteObjects: 0.232005 ms)
+Total: 0.564941 ms (FindLiveObjects: 0.011995 ms CreateObjectMapping: 0.005851 ms MarkObjects: 0.087476 ms  DeleteObjects: 0.212986 ms)
+
+Backpack is live!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Player2 now has StopSign
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+StopSign is live
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Backpack is live!
  
@@ -61,7 +73,19 @@ BP picked up by Player2
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+Player2 now has SpareTire
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Player2's health ran out!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 Player2 now has Coffee
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Puddle is live!
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -69,9 +93,35 @@ coffee is live
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Coffee collided with Edge_18
+Player2 now has SpareTire
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Coffee collided with Player1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Backpack is live!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BP picked up by Player2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Player2 now has Book
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Player2 Wins!!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 1.805997 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 185 unused Assets to reduce memory usage. Loaded Objects now: 177.
+Total: 4.294838 ms (FindLiveObjects: 0.019309 ms CreateObjectMapping: 0.014335 ms MarkObjects: 0.187826 ms  DeleteObjects: 3.346346 ms)
 
 can't quit from editor
  
